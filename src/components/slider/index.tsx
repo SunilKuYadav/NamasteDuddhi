@@ -1,28 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Pic1 from "../../assets/svg/IntroTPGIF.gif";
 import Pic2 from "../../assets/img/TPBanner.png";
 import Pic3 from "../../assets/img/TrivenipointLogo.png";
 
 const Quotes = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState<number>(0);
   const length = DATA.length - 1;
-  const time = (direction: boolean): number => {
-    if (direction) {
-      if (counter < length) {
-        setCounter((prev) => prev + 1);
+
+  useEffect(() => {
+    const interval = setInterval(() => time(true), 9000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const time = (direction: boolean) => {
+    setCounter((prev) => {
+      if (prev < length && direction) {
+        return prev + 1;
+      }
+      if (prev === length && direction) {
         return 0;
       }
-      setCounter(0);
-      return 0;
-    }
-    if (counter === 0) {
-      setCounter(length);
-      return 0;
-    }
-    setCounter((prev) => prev - 1);
-    return 0;
+      if (prev === 0 && !direction) {
+        return length;
+      }
+      return prev - 1;
+    });
   };
+
   return (
     <>
       <div

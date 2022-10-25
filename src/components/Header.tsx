@@ -4,7 +4,6 @@ const Header = () => {
   return (
     <div
       style={{
-        border: "1px solid red",
         backgroundColor: "#fff6",
         height: "70px",
         display: "flex",
