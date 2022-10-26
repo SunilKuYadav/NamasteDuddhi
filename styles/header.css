@@ -1,0 +1,27 @@
+.header-container {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-font {
+  color: #0f0;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-font-highlight {
+  color: #f00;
+  font-size: 70px;
+  line-height: 70px;
+}
+
+.tag-name {
+  font-size: 50px;
+  color: #ff0;
+  line-height: 50px;
+}/*# sourceMappingURL=header.css.map */

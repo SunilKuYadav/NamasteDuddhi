@@ -1,50 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="This is website for service and sale promotion assured by TriveniPoint in Bome Wyndhamganj Duddhi Sonebhadra"
-    />
-    <meta name="keywords" content="Duddhi, TriveniPoint, Bome">
-    <meta name="author" content="Sunil Kumar Yadav">
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fasthand&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
-    <title>नमस्ते Duddhi</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="This is website for service and sale promotion assured by TriveniPoint in Bome Wyndhamganj Duddhi Sonebhadra" />
+  <meta name="keywords" content="Duddhi, TriveniPoint, Bome">
+  <meta name="author" content="Sunil Kumar Yadav">
+  <link rel="apple-touch-icon" href="logo192.png" />
+  <link rel="manifest" href="manifest.json" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fasthand&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- local styles -->
+  <link href="./styles/global.css" rel="stylesheet" />
+  <link href="./styles/header.css" rel="stylesheet" />
+  <link href="./styles/quotes.css" rel="stylesheet" />
+  <!-- local scripting -->
+  <script type="text/javascript" src="./scripts/quotes.js"></script>
+  <title>नमस्ते Duddhi</title>
+</head>
+
+<body onload="showQuoteData()">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <!-- navigation/header start -->
+    <nav class="header-container">
+      <h1 class="logo-font">
+        <span id="logo-font-highlight">न</span>
+        <span>मस्ते</span>
+        <span class="logo-font-highlight">D</span>
+        <span>uddhi</span>
+      </h1>
+      <h3 class="tag-name">A Step Towards Future</h3>
+    </nav>
+    <!-- navigation/header end -->
+
+    <!-- Quotes start -->
+    <section class="quote-container">
+      <button class="prev-next-btn" onclick="move(false)">&#60;</button>
+      <div class="quote-data-container">
+        <h5 class='quote ' id='0'>these are some most important and precious advices every one should read 💜🙂</h5>
+        <h5 class='quote hide' id='1'>Take risks in your life. If you win, you can lead; if you lose, you can guide.
+        </h5>
+        <h5 class='quote hide' id='2'>People are not what they say but what they do; so judge them not from their words
+          but
+          from
+          their actions.</h5>
+        <h5 class='quote hide' id='3'>When someone hurts you, don't feel bad because it's a law of nature that the tree
+          that
+          bears
+          the sweetest fruits gets maximum number of stones.</h5>
+        <h5 class='quote hide' id='4'>Take whatever you can from your life because when life starts taking from you, it
+          takes even
+          your last breath.</h5>
+        <h5 class='quote hide' id='5'>In this world, people will always throw stones on the path of your success. It
+          depends
+          on what
+          you make from them - a wall or a bridge.</h5>
+        <h5 class='quote hide' id='6'>Challenges make life interesting; overcoming them make life meaningful.</h5>
+        <h5 class='quote hide' id='7'>There is no joy in victory without running the risk of defeat.</h5>
+        <h5 class='quote hide' id='8'>A path without obstacles leads nowhere.</h5>
+        <h5 class='quote hide' id='9'>Past is a nice place to visit but certainly not a good place to stay.</h5>
+        <h5 class='quote hide' id='10'>You can't have a better tomorrow if you are thinking about yesterday all the
+          time.
+        </h5>
+        <h5 class='quote hide' id='11'>If what you did yesterday still looks big to you, then you haven't done much
+          today.
+        </h5>
+        <h5 class='quote hide' id='12'>If you don't build your dreams, someone else will hire you to build theirs.</h5>
+        <h5 class='quote hide' id='13'>If you don't climb the mountain; you can't view the plain.</h5>
+        <h5 class='quote hide' id='14'>Don't leave it idle - use your brain.</h5>
+        <h5 class='quote hide' id='15'>You are not paid for having brain, you are only rewarded for using it
+          intelligently.
+        </h5>
+        <h5 class='quote hide' id='16'>It is not what you don't have that limits you; it is what you have but don't know
+          how
+          to use.
+        </h5>
+        <h5 class='quote hide' id='17'>What you fail to learn might teach you a lesson.</h5>
+        <h5 class='quote hide' id='18'>The difference between a corrupt person and an honest person is: The corrupt
+          person
+          has a
+          price while the honest person has a value.</h5>
+        <h5 class='quote hide' id='19'>If you succeed in cheating someone, don't think that the person is a fool......
+          Realize that
+          the person trusted you much more than you deserved.</h5>
+        <h5 class='quote hide' id='20'>Honesty is an expensive gift; don't expect it from cheap people.</h5>
+
+      </div>
+      <button class="prev-next-btn" onclick="move(true)">&#62;</button>
+    </section>
+    <!-- Quotes end -->
+
+  </div>
+</body>
+
 </html>

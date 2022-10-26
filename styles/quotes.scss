@@ -1,0 +1,28 @@
+.quote-container {
+  min-height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+.prev-next-btn {
+  padding: 10px;
+  font-size: 70px;
+}
+.quote-wrapper {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote {
+  font-size: 40px;
+  min-height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
