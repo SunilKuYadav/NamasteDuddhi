@@ -27,27 +27,26 @@ const length = DATA.length - 1;
 
 // function for moving left and right
 const move = (direction) => {
-  document.getElementById(`${counter}`).style.display = "none";
   if (counter < length && direction) {
-    document.getElementById(`${counter + 1}`).style.display = "flex";
     counter += 1;
+    document.getElementById("quote").innerHTML = DATA[counter];
     return null;
   }
   if (counter === length && direction) {
-    document.getElementById(`${0}`).style.display = "flex";
     counter = 0;
+    document.getElementById("quote").innerHTML = DATA[counter];
     return null;
   }
   if (counter === 0 && !direction) {
-    document.getElementById(`${length}`).style.display = "flex";
     counter = length;
+    document.getElementById("quote").innerHTML = DATA[counter];
     return null;
   }
-  document.getElementById(`${counter - 1}`).style.display = "flex";
   counter -= 1;
+  document.getElementById("quote").innerHTML = DATA[counter];
   return null;
 };
 
 const showQuoteData = () => {
-  document.getElementById(`${counter}`).style.display = "flex";
+  document.getElementById("quote").innerHTML = DATA[counter];
 };

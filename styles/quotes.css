@@ -19,12 +19,14 @@
   align-items: center;
 }
 
-.quote {
+#quote {
   font-size: 40px;
   min-height: 390px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 30px;
 }
 
 .hide {
