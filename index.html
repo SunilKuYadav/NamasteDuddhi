@@ -22,13 +22,14 @@
   <!-- local styles -->
   <link href="./styles/global.css" rel="stylesheet" />
   <link href="./styles/header.css" rel="stylesheet" />
-  <link href="./styles/quotes.css" rel="stylesheet" />
+  <link href="./styles/slider.css" rel="stylesheet" />
+  <link href="./styles/service-offer.css" rel="stylesheet" />
   <!-- local scripting -->
-  <script type="text/javascript" src="./scripts/quotes.js"></script>
+  <script type="text/javascript" src="./scripts/slider.js"></script>
   <title>नमस्ते Duddhi</title>
 </head>
 
-<body onload="showQuoteData()">
+<body onload="showSliderData()">
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root">
     <!-- navigation/header start -->
@@ -42,18 +43,55 @@
       <h3 class="tag-name">A Step Towards Future</h3>
     </nav>
     <!-- navigation/header end -->
+    <!-- service we offer start -->
+    <section class="service-container">
+      <div class="service-nav-tab">
+        <button class="service-nav-item">Duddhi</button>
+        <button class="service-nav-item">Bome</button>
+        <button class="service-nav-item">Renukoot</button>
+        <button class="service-nav-item">Sonebhadra</button>
+      </div>
+      <div>
+        <div>
+          <p>Name</p>
+          <p>Time</p>
+          <p>Map</p>
+          <p>Service List</p>
+        </div>
+      </div>
+    </section>
+    <!-- service we offer end -->
 
     <!-- Quotes start -->
-    <section class="quote-container">
-      <button class="prev-next-btn" onclick="move(false)">&#60;</button>
-      <div class="quote-data-container">
+    <section class="slider-container">
+      <button class="prev-next-btn" onclick="moveQuotes(false)">&#60;</button>
+      <div class="slider-data-container">
         <h5 id='quote'></h5>
-
-
       </div>
-      <button class="prev-next-btn" onclick="move(true)">&#62;</button>
+      <button class="prev-next-btn" onclick="moveQuotes(true)">&#62;</button>
     </section>
     <!-- Quotes end -->
+
+    <!-- Our sponsored strat -->
+    <section>
+      <h3>Our sponsored</h3>
+      <h4><span>T</span>riveni<span>P</span>oint</h4>
+      <p>TriveniPoint is startup based serveice provider and retail bussiness. Currently they are having very small
+        people team build the base of thier bussiness <span>more</span> </p>
+      <div>
+        <p>email us</p>
+        <p>call or msg us</p>
+
+      </div>
+      <section class="slider-container">
+        <button class="prev-next-btn" onclick="moveImage(false)">&#60;</button>
+        <div class="slider-data-container">
+          <img id='logos-banners' alt="TriveniPoint logos and banners" />
+        </div>
+        <button class="prev-next-btn" onclick="moveImage(true)">&#62;</button>
+      </section>
+    </section>
+    <!-- Our sponsored end -->
 
   </div>
 </body>

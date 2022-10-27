@@ -32,18 +32,17 @@
     background: pink;
   }
 }
-.quote-container {
+.slider-container {
   min-height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 .prev-next-btn {
   padding: 10px;
   font-size: 70px;
 }
-.quote-wrapper {
+.slider-wrapper {
   min-width: 400px;
   display: flex;
   flex-direction: column;
@@ -58,6 +57,10 @@
   align-items: center;
   text-align: center;
   padding: 30px;
+}
+#logos-banners {
+  width: 100%;
+  max-height: 400px;
 }
 .hide {
   display: none;
