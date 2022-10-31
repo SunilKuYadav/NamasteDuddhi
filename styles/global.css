@@ -5,4 +5,102 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+@media only screen and (max-width: 300px) {
+  *,
+::after,
+::before {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  *,
+::after,
+::before {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  *,
+::after,
+::before {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  *,
+::after,
+::before {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  *,
+::after,
+::before {
+    font-size: 25px;
+  }
+}
+
+html {
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+html .max-font {
+  font-size: 21px;
+}
+html .container {
+  padding: 0 10px;
+}
+@media only screen and (max-width: 300px) {
+  html .max-font {
+    font-size: 20px;
+  }
+  html .container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  html .max-font {
+    font-size: 26px;
+  }
+  html .container {
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html .max-font {
+    font-size: 30px;
+  }
+  html .container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  html .max-font {
+    font-size: 33px;
+  }
+  html .container {
+    padding: 0 25px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html .max-font {
+    font-size: 30px;
+  }
+  html .container {
+    padding: 0 30px;
+  }
 }/*# sourceMappingURL=global.css.map */

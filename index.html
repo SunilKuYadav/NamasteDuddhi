@@ -33,37 +33,45 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root">
     <!-- navigation/header start -->
-    <nav class="header-container">
+    <nav class="header-container container">
       <h1>
-        <span class="logo-font-highlight">न</span>
+        <span class="logo-font-highlight max-font">न</span>
         <span class="logo-font">मस्ते</span>
-        <span class="logo-font-highlight">D</span>
+        <span class="logo-font-highlight max-font">D</span>
         <span class="logo-font">uddhi</span>
       </h1>
-      <h3 class="tag-name">A Step Towards Future</h3>
+      <h3 class="tag-name  max-font">A Step Towards Future</h3>
     </nav>
     <!-- navigation/header end -->
     <!-- service we offer start -->
-    <section class="service-container">
+    <section class="service-container container">
       <div class="service-nav-tab">
         <button class="service-nav-item">Duddhi</button>
         <button class="service-nav-item">Bome</button>
-        <button class="service-nav-item">Renukoot</button>
-        <button class="service-nav-item">Sonebhadra</button>
+        <!-- <button class="service-nav-item">Renukoot</button> -->
+        <!-- <button class="service-nav-item">Sonebhadra</button> -->
       </div>
       <div>
-        <div>
-          <p>Name</p>
-          <p>Time</p>
-          <p>Map</p>
-          <p>Service List</p>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Time</th>
+              <th>Map</th>
+              <th>Service List</th>
+              <th>Know more</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
       </div>
     </section>
     <!-- service we offer end -->
 
     <!-- Quotes start -->
-    <section class="slider-container">
+    <section class="slider-container container">
       <button class="prev-next-btn" onclick="moveQuotes(false)">&#60;</button>
       <div class="slider-data-container">
         <h5 id='quote'></h5>
@@ -77,13 +85,14 @@
       <h3>Our sponsored</h3>
       <h4><span>T</span>riveni<span>P</span>oint</h4>
       <p>TriveniPoint is startup based serveice provider and retail bussiness. Currently they are having very small
-        people team build the base of thier bussiness <span>more</span> </p>
+        people team build the base of thier bussiness <a href="">more</a> </p>
       <div>
-        <p>email us</p>
-        <p>call or msg us</p>
-
+        <a href="">email us</a>
+        <a href="">whatsapp us</a>
+        <a href="">FB Page</a>
+        <a href="">map</a>
       </div>
-      <section class="slider-container">
+      <section class="slider-container container">
         <button class="prev-next-btn" onclick="moveImage(false)">&#60;</button>
         <div class="slider-data-container">
           <img id='logos-banners' alt="TriveniPoint logos and banners" />
@@ -92,6 +101,7 @@
       </section>
     </section>
     <!-- Our sponsored end -->
+
 
   </div>
 </body>

@@ -25,8 +25,8 @@ const QUOTES_DATA = [
 // TP banners and logos
 const TP_LOGO_DATA = [
   "./assets/svg/IntroTPGIF.gif",
-  "./assets/img/TPBanner.png",
-  "./assets/img/TrivenipointLogo.png",
+  "./assets/img/TPBanner.webp",
+  "./assets/img/TrivenipointLogo.webp",
 ];
 
 // variables
