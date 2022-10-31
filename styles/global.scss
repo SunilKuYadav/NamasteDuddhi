@@ -39,7 +39,10 @@ html {
   .tbp {
     padding: 30px 10px;
   }
-
+  .heading-link {
+    font-weight: bold;
+    text-decoration: none;
+  }
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 300px) {
     .max-font {

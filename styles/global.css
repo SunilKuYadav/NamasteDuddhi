@@ -64,6 +64,10 @@ html .container {
 html .tbp {
   padding: 30px 10px;
 }
+html .heading-link {
+  font-weight: bold;
+  text-decoration: none;
+}
 @media only screen and (max-width: 300px) {
   html .max-font {
     font-size: 20px;
