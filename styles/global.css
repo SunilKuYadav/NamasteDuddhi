@@ -61,12 +61,18 @@ html .max-font {
 html .container {
   padding: 0 10px;
 }
+html .tbp {
+  padding: 30px 10px;
+}
 @media only screen and (max-width: 300px) {
   html .max-font {
     font-size: 20px;
   }
   html .container {
     padding: 0 10px;
+  }
+  html .tbp {
+    padding: 30px 10px;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -79,6 +85,9 @@ html .container {
   html .container {
     padding: 0 15px;
   }
+  html .tbp {
+    padding: 40px 15px;
+  }
 }
 @media only screen and (min-width: 768px) {
   html .max-font {
@@ -86,6 +95,9 @@ html .container {
   }
   html .container {
     padding: 0 20px;
+  }
+  html .tbp {
+    padding: 50px 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -95,6 +107,9 @@ html .container {
   html .container {
     padding: 0 25px;
   }
+  html .tbp {
+    padding: 60px 25px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   html .max-font {
@@ -102,5 +117,8 @@ html .container {
   }
   html .container {
     padding: 0 30px;
+  }
+  html .tbp {
+    padding: 70px 30px;
   }
 }/*# sourceMappingURL=global.css.map */

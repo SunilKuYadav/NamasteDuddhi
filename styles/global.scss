@@ -6,37 +6,38 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
+
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 300px) {
     font-size: 10px;
   }
-
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     font-size: 16px;
   }
-
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     font-size: 20px;
   }
-
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     font-size: 22px;
   }
-
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     font-size: 25px;
   }
 }
+
 html {
   .max-font {
     font-size: 21px;
   }
   .container {
     padding: 0 10px;
+  }
+  .tbp {
+    padding: 30px 10px;
   }
 
   /* Extra small devices (phones, 600px and down) */
@@ -47,8 +48,10 @@ html {
     .container {
       padding: 0 10px;
     }
+    .tbp {
+      padding: 30px 10px;
+    }
   }
-
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     font-size: 16px;
@@ -58,8 +61,10 @@ html {
     .container {
       padding: 0 15px;
     }
+    .tbp {
+      padding: 40px 15px;
+    }
   }
-
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     .max-font {
@@ -68,8 +73,10 @@ html {
     .container {
       padding: 0 20px;
     }
+    .tbp {
+      padding: 50px 20px;
+    }
   }
-
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .max-font {
@@ -78,8 +85,10 @@ html {
     .container {
       padding: 0 25px;
     }
+    .tbp {
+      padding: 60px 25px;
+    }
   }
-
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .max-font {
@@ -87,6 +96,9 @@ html {
     }
     .container {
       padding: 0 30px;
+    }
+    .tbp {
+      padding: 70px 30px;
     }
   }
 }
