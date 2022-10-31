@@ -24,7 +24,7 @@ const QUOTES_DATA = [
 ];
 // TP banners and logos
 const TP_LOGO_DATA = [
-  "./assets/svg/IntroTPGIF.gif",
+  // "./assets/svg/IntroTPGIF.webm",
   "./assets/img/TPBanner.webp",
   "./assets/img/TrivenipointLogo.webp",
 ];
@@ -70,6 +70,8 @@ const moveImage = (direction) => {
   imgInterval = setInterval(() => {
     moveImage(true);
   }, 9000);
+  document.getElementById("logos-banners").style.display = "block";
+  document.getElementById("logos-video").style.display = "none";
   if (bannerCounter < bannerLength && direction) {
     bannerCounter += 1;
     document.getElementById("logos-banners").src = TP_LOGO_DATA[bannerCounter];
