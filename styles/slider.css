@@ -1,5 +1,19 @@
+.slider-containers {
+  display: flex;
+  background-color: #9ed2c6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider-containers .heading {
+  font-family: "Fasthand";
+  color: #3120e0;
+  margin-bottom: 30px;
+}
+
 .slider-container {
-  min-height: 400px;
+  min-height: 200px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
