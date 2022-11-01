@@ -1,3 +1,45 @@
 .sponsored-container {
   background-color: #afb4ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .heading {
+    font-family: "Fasthand";
+    color: #0008c1;
+  }
+  .sponsored-card {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -2px -2px 29px -8px rgba(0, 0, 0, 0.53);
+    padding: 50px 10px;
+    border-radius: 10px;
+    &:hover {
+      box-shadow: 0px 0px 29px 8px rgba(0, 0, 0, 0.53);
+    }
+    .sponsored-card-title {
+      text-decoration: none;
+      cursor: pointer;
+      .highlight {
+        font-size: 50px;
+        position: relative;
+        left: 10px;
+        color: #f00;
+      }
+      .fasthand {
+        font-family: "Fasthand";
+        color: #0f0;
+        font-size: 40px;
+      }
+    }
+    .sponsored-card-description {
+      font-size: 24px;
+      color: #f0f2b6;
+      position: relative;
+      left: 10px;
+    }
+  }
 }

@@ -39,6 +39,14 @@ html {
   .tbp {
     padding: 30px 10px;
   }
+  .link {
+    text-decoration: none;
+    color: #0008c199;
+    &:hover {
+      text-decoration: underline;
+      color: #0008c1;
+    }
+  }
   .heading-link {
     font-weight: bold;
     text-decoration: none;

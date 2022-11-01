@@ -64,6 +64,14 @@ html .container {
 html .tbp {
   padding: 30px 10px;
 }
+html .link {
+  text-decoration: none;
+  color: rgba(0, 8, 193, 0.6);
+}
+html .link:hover {
+  text-decoration: underline;
+  color: #0008c1;
+}
 html .heading-link {
   font-weight: bold;
   text-decoration: none;
