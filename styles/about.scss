@@ -1,0 +1,12 @@
+.about-us-container {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .heading {
+    font-family: "Fasthand";
+    color: #0008c1;
+    margin-bottom: 30px;
+  }
+}
